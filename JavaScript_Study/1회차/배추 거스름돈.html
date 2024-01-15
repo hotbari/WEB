@@ -14,19 +14,25 @@
     <script>
 
     const countElement = document.querySelector("#count")
-    let count = prompt("배추 개수 입력")
+    let count = parseInt(prompt("구입할 배추 개수를 입력하세요")) 
     countElement.textContent = count
+    document.write(`구입할 배추는 ${count}개 입니다.<br>`)
+
 
     const costElement = document.querySelector("#cost")
-    let cost = prompt("지불할 돈 입력")
+    let cost = parseInt(prompt("지불할 돈을 입력하세요."))
     costElement.textContent = cost
+    document.write(`${cost}원을 받았습니다.<br>`)
 
 
-    const answerElement = document.querySelector(".question")
+    document.write(`거스름돈 ${question()}원을 돌려드립니다.`)
 
-    function question(count, cost) {
-        result = w - 3000*n
-        return result
+    function question(n, w) {
+
+        n = count
+        w = cost
+        let result = w - 3000*n ;
+        return result;
     }
 
 
