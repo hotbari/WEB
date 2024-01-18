@@ -21,9 +21,13 @@
 
 function question(a, n) {
     // 여기에서 코드 작성해주세요!
-    let result;
-    let count = 0;
+    let result = 0;
 
+    for (i=0; i < a.length; i++){
+        if (a[i] === n ){
+            result += 1
+        }
+    }
     
     return result;
 }

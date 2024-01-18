@@ -11,3 +11,7 @@ const order3 = new OrderSet("해산물리소토","양송이스프","물")
 console.log(order1)
 console.log(order2)
 console.log(order3)
+
+console.log(Math.random())
+console.log(Math.random()*2)
+console.log(Math.floor(Math.random()*2)+1)
